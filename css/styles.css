@@ -1,0 +1,265 @@
+/* Primary light color: #FFFFFF */
+/* Secondary light color: #F5F4FA */
+/* Hero&Footer background color: #2F303A */
+/* Focus color: #2196F3; */
+/* Primary dark color: #212121 */
+/* Secondary dark color: #757575 */
+/* Tretiary dark color: color: rgba(255, 255, 255, 0.6); */
+
+/* Colors variables */
+:root {
+  --primary-light: #ffffff;
+  --secondary-light: #f5f4fa;
+  --hero-footer-background: #2f303a;
+  --focus: #2196f3;
+  --hero-focus: #188ce8;
+  --primary-dark: #212121;
+  --secondary-dark: #757575;
+  --tretiary-dark: rgba(255, 255, 255, 0.6);
+}
+
+/* Common things */
+
+body {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+
+  font-family: Roboto, sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.logo.link {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo .particle {
+  color: var(--focus);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list .link:hover,
+.list .link:focus {
+  color: var(--focus);
+}
+
+/* Button */
+
+.button {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+
+  cursor: pointer;
+  font-family: inherit;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.button.primary {
+  background-color: var(--focus);
+  color: var(--primary-light);
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--hero-focus);
+  color: var(--primary-light);
+}
+
+.button.secondary {
+  background-color: var(--secondary-light);
+  color: var(--primary-dark);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  background-color: var(--focus);
+  color: var(--primary-light);
+}
+
+/* Header */
+
+.nav-contacts {
+  color: var(--secondary-dark);
+}
+
+.nav-pages .current {
+  color: var(--focus);
+}
+
+.nav-pages .link,
+.nav-contacts .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Main Studio */
+
+/* Hero */
+.hero {
+  background-color: var(--hero-footer-background);
+}
+
+.hero-title {
+  color: var(--primary-light);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Sections */
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Out benefits */
+
+.benefit-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.benefit-description {
+  color: var(--secondary-dark);
+
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+}
+
+/* Out Team */
+
+.section.team {
+  background-color: var(--secondary-light);
+}
+
+.team-item {
+  background-color: var(--primary-light);
+}
+
+.team-member.title {
+  color: var(--primary-dark);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-member.description {
+  color: var(--secondary-dark);
+
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Main Portfolio */
+
+.project-description {
+  color: var(--secondary-dark);
+}
+
+.filter .button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.03em;
+}
+
+/* Вот тут костыль перезаписывает ".list .link:hover" */
+.project .link:hover,
+.project .link:focus {
+  color: var(--primary-dark);
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--hero-footer-background);
+}
+
+.footer .logo,
+.footer .address {
+  color: var(--primary-light);
+}
+
+.footer .email,
+.footer .phone {
+  color: var(--tretiary-dark);
+}
+
+.footer-address .link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+}
