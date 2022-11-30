@@ -25,6 +25,13 @@ body {
   color: var(--primary-dark);
 
   font-family: Roboto, sans-serif;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .visually-hidden {
