@@ -18,7 +18,7 @@
   --tretiary-dark: rgba(255, 255, 255, 0.6);
 }
 
-/* Common things */
+/* Utilities */
 
 html {
   box-sizing: border-box;
@@ -35,6 +35,19 @@ body {
   color: var(--primary-dark);
 
   font-family: Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -75,21 +88,31 @@ body {
   color: var(--focus);
 }
 
-/* Button */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 15px;
+
+  outline: 3px dotted tomato;
+}
+
+/* Button Utilities */
 
 .button {
   background-color: var(--primary-light);
   color: var(--primary-dark);
-
-  cursor: pointer;
-  font-family: inherit;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+  
+  cursor: pointer;
+  text-align: center;
 }
 
 .button.primary {
@@ -116,7 +139,31 @@ body {
 
 /* Header */
 
+.header {
+  /* background-color: yellow; */
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-pages {
+  display: flex;
+  gap: 50px;
+  margin-left: 93px;
+}
+
 .nav-contacts {
+  display: flex;
+  margin-left: auto;
+  gap: 40px;
+  
   color: var(--secondary-dark);
 }
 
@@ -126,30 +173,18 @@ body {
 
 .nav-pages .link,
 .nav-contacts .link {
+  display: block;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* Main Studio */
-
-/* Hero */
-.hero {
-  background-color: var(--hero-footer-background);
-}
-
-.hero-title {
-  color: var(--primary-light);
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
 /* Sections */
 
 .section-title {
@@ -157,7 +192,38 @@ body {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+
   text-align: center;
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--hero-footer-background);
+}
+
+.hero .container {
+  text-align: center;
+}
+
+.hero .button {
+  padding: 10px 24px;
+  min-width: 200px;
+  min-height: 50px;
+}
+
+.hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  
+  color: var(--primary-light);
 }
 
 /* Out benefits */
@@ -183,11 +249,11 @@ body {
   background-color: var(--secondary-light);
 }
 
-.team-item {
+.team .item {
   background-color: var(--primary-light);
 }
 
-.team-member.title {
+.employee.title {
   color: var(--primary-dark);
 
   font-weight: 500;
@@ -197,7 +263,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.team-member.description {
+.employee.description {
   color: var(--secondary-dark);
 
   font-size: 16px;
