@@ -184,12 +184,13 @@ p {
 /* Sections */
 
 .section-title {
+  margin-bottom: 50px;
+  text-align: center;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-
-  text-align: center;
 }
 
 /* Hero */
@@ -253,6 +254,17 @@ p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+/* Our product */
+
+.product .container {
+  padding-bottom: 94px;
+}
+
+.product .list {
+  display: flex;
+  gap: 30px;
 }
 
 /* Out Team */
