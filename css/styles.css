@@ -139,10 +139,6 @@ p {
 
 /* Header */
 
-.header {
-  /* background-color: yellow; */
-}
-
 .header .container {
   display: flex;
   align-items: center;
@@ -228,12 +224,28 @@ p {
 
 /* Out benefits */
 
+.section.benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.benefits.list {
+  display: flex;
+  gap: 30px;
+}
+
+.benefits .item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
 .benefit-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 
 .benefit-description {
