@@ -351,12 +351,31 @@ p {
 /* Footer */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--hero-footer-background);
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer .logo,
 .footer .address {
   color: var(--primary-light);
+}
+
+.footer .logo {
+  display: block;
+  margin-bottom: 28px;
+}
+
+.footer-address.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .footer .email,
@@ -365,6 +384,8 @@ p {
 }
 
 .footer-address .link {
+  display: block;
+
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
