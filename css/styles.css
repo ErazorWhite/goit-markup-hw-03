@@ -195,6 +195,9 @@ p {
 
 .hero {
   background-color: var(--hero-footer-background);
+
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero .container {
