@@ -31,10 +31,10 @@ html {
 }
 
 body {
+  font-family: Roboto, sans-serif;
+  
   background-color: var(--primary-light);
   color: var(--primary-dark);
-
-  font-family: Roboto, sans-serif;
 }
 
 h1,
@@ -210,10 +210,10 @@ img {
 /* Hero */
 
 .hero {
-  background-color: var(--hero-footer-background);
-
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-color: var(--hero-footer-background);
 }
 
 .hero .container {
@@ -267,10 +267,11 @@ img {
 }
 
 .benefit-description {
-  color: var(--secondary-dark);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  color: var(--secondary-dark);
 }
 
 /* Our product */
