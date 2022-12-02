@@ -402,11 +402,6 @@ img {
   background-color: var(--hero-footer-background);
 }
 
-.footer .container {
-  display: flex;
-  flex-direction: column;
-}
-
 .footer .logo,
 .footer .address {
   color: var(--primary-light);
