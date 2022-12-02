@@ -140,6 +140,8 @@ img {
 .button.secondary {
   background-color: var(--secondary-light);
   color: var(--primary-dark);
+
+  padding: 6px 22px;
 }
 
 .button.secondary:hover,
@@ -153,7 +155,7 @@ img {
 /* Header */
 
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header .container {
@@ -362,7 +364,9 @@ img {
 
 .project-box {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .project-title {
