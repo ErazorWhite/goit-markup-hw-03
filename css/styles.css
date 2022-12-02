@@ -51,9 +51,9 @@ p {
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -101,7 +101,6 @@ img {
   padding: 0px 15px;
 
   /* outline: 3px dotted chocolate; */
-
 }
 
 /* Button Utilities */
@@ -109,12 +108,12 @@ img {
 .button {
   border: 1px solid transparent;
   border-radius: 4px;
-  
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  
+
   cursor: pointer;
   text-align: center;
 
@@ -151,7 +150,7 @@ img {
 /* Header */
 
 .header {
-  border: 1px solid #ECECEC;
+  border: 1px solid #ececec;
 }
 
 .header .container {
@@ -345,7 +344,6 @@ img {
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
-
 }
 
 .filter .button {
@@ -364,7 +362,7 @@ img {
 
 .project.item {
   flex-basis: calc((100% - 60px) / 3);
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
 }
 
 .project-box {
